@@ -151,6 +151,10 @@ input{
     transform: translateX(-50%) translateY(-50%);
 }
 
+table{
+    padding-left: 1em;
+}
+
 footer{
     display: flex;
     padding-left: 1em;
