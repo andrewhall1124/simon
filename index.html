@@ -5,33 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Simon|Home</title>
         <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="main.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     </head>
     <body>
         <header>
-            <h1>Simon</h1>
+            <a href = "#" class="header-logo" >Simon<sup>&reg;</sup></a>
             <nav>
                 <menu>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "play.html">Play</a></li>
-                    <li><a href = "scores.html">Scores</a></li>
-                    <li><a href = "about.html">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href = "index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href = "play.html">Play</a></li>
+                    <li class="nav-item"><a class="nav-link" href = "scores.html">Scores</a></li>
+                    <li class="nav-item"><a class="nav-link" href = "about.html">About</a></li>
                 </menu>
             </nav>
-        <hr/>
         </header>
         <main>
             <h1>Welcome</h1>
             <p>Login to play</p>
             <form method="get" action="play.html">
-                <label for ="name">Name</label>
-                <input type ="text" id="name" placeholder="Your name here:)"/>
-                <button type="submit">Login</button>
+                <input type ="text" id="name" placeholder="Username"/>
+                <button type="submit" class="btn btn-primary">Login</button>
             </form>
         </main>
-        <hr/>
         <footer>
-            <p>Author: <a href="https://www.linkedin.com/in/andrewhall1124" target="_blank">Andrew Hall</a></p>
-            <p> <a href="https://github.com/andrewhall1124/simon" target="_blank">GitHub</a></p>
+            <p> <a class="text-reset" href="https://www.linkedin.com/in/andrewhall1124" target="_blank">Andrew Hall</a></p>
+            <p> <a class="text-reset" href="https://github.com/andrewhall1124/simon" target="_blank">Source</a></p>
         </footer>
     </body>
 </html>

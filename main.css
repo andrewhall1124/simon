@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    background: black;
+    height: 80px;
+    align-items:center;
+}
+
+.header-logo{
+    padding-left: 1em;
+    color: white;
+    cursor: auto;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: solid white;
+    height: 30px;
+}
+
+menu{
+    display: flex;
+    list-style:none;
+    flex: 1;
+}
+
+menu .nav-item{
+    padding-left: .3em;
+    color: white;
+}
+
+.active{
+    font-weight: bold;
+}
+
+main{
+    background: white;
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+p{
+    font-weight: bold;
+}
+
+input{
+    border: solid black;
+    border-radius:5px;
+    background: rgb(243, 243, 243);
+}
+
+footer{
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: black;
+    color: white;
+    height: 30px;
+    justify-content:space-between;
+    text-decoration: none;
+}
+
+.text-reset{
+    text-decoration: none;
+    color: white;
+}
