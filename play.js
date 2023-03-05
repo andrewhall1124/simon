@@ -47,7 +47,7 @@ class Game {
         this.playPlaybackPos = 0;
         this.mistakeSound = loadSound("error.mp3");
 
-        document.querySelectorAll("#game-button").forEach((element, i) => {
+        document.querySelectorAll(".game-button").forEach((element, i) => {
             if(i < btnDescriptions.length) {
                 this.buttons.set(el.id, new Button(btnDescriptions[i], element));
             }
@@ -106,6 +106,28 @@ class Game {
     addButton() {
         const btn = this.getRandomButton();
         this.sequence.push(btn);
+    }
+
+    updateScore(score) {
+        const scoreElement = document.querySelector("#score");
+        scoreElement.textContent = score;
+    }
+
+    async buttonDance(laps =1) {
+        for (let step = 0; step < laps; step++) {
+            for (const btn of this.buttons.values()) {
+                await btn.press(0);
+            }
+        }
+    }
+
+    getRandomButton() {
+        let buttons = Array.from(this.buttons.values());
+        return buttons[Math.floor(Math.random() * this.buttons.size)];
+    }
+
+    saveScore(score) {
+        const userName = this.getPlayerName()
     }
 }
 
