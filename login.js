@@ -1,5 +1,5 @@
 function login(){
-    const loginName = doctument.queerySelector("#name");
+    const loginName = doctument.querySelector("#name");
     localStorage.setItem("username",loginName.value);
     window.location.href = "play.html"
 }
