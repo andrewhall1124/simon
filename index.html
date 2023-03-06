@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Simon|Home</title>
         <link rel="icon" href="favicon.ico"/>
+
         <link rel="stylesheet" href="main.css" />
 
     <!-- Include bootstrap CSS framework -->
@@ -30,14 +31,15 @@
         <main>
             <h1>Welcome</h1>
             <p class="bold">Login to play</p>
-            <form method="get" action="play.html">
-                <input type ="text" id="name" placeholder="Username"/>
-                <button type="submit" class="btn btn-primary" onclick="login()">Login</button>
-            </form>
+            <div>
+                <input type="text" id="name" placeholder="Your name here" />
+                <button class="btn btn-primary" onclick="login()">Login</button>
+            </div>
         </main>
         <footer>
             <p> <a class="text-reset" href="https://www.linkedin.com/in/andrewhall1124" target="_blank">Andrew Hall</a></p>
             <p> <a class="text-reset" href="https://github.com/andrewhall1124/simon" target="_blank">Source</a></p>
         </footer>
     </body>
+    <script src="/login.js"></script>
 </html>
