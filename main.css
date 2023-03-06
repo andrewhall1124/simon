@@ -105,7 +105,7 @@ input{
     background-color: yellow;
     border-radius: 0 0  0 100%;
     margin: 0 0 20px 20px;
-    border: thick solid gold;
+    border: thick solid rgb(94, 90, 10);
 }
 
 .button-bottom-right{
