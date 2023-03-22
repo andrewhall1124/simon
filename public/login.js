@@ -3,4 +3,3 @@ function login() {
     localStorage.setItem("userName", nameEl.value);
     window.location.href = "play.html";
   }
-  
