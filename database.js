@@ -8,7 +8,7 @@ if (!userName) {
   throw Error('Database not configured. Set environment variables');
 }
 
-const url = `mongodb+srv://andrewhall1124:Mm52745274@simon-cluster.enealio.mongodb.net/?retryWrites=true&w=majority`;
+const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
 const scoreCollection = client.db('simon').collection('score');
