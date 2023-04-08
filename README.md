@@ -1,2 +1,3 @@
-# simon
-testing if I remember how to commit
+# simon-react
+
+This deliverable demonstrates using a web framework.
